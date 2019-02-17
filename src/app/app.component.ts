@@ -4,6 +4,8 @@ import {Should_Change_Title_Text} from './core/constant/signal.constant';
 import {NotificationService} from './core/service/notification.service';
 import {takeUntil} from 'rxjs/operators';
 import {InfoService} from './core/service/info.service';
+import {NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Router} from '@angular/router';
+import {Signal_ButterBar_Toggle} from './core/component/butter-bar/butter-bar.component';
 
 @Component({
   selector: 'app-root',
@@ -28,8 +30,16 @@ export class AppComponent extends BaseComponent implements OnInit {
     icon: 'icon-contact'
   }];
 
-  constructor(private notificationService: NotificationService, private infoService: InfoService) {
+  constructor(private router: Router, private notificationService: NotificationService, private infoService: InfoService) {
     super();
+    router.events.subscribe(event => {
+        if (event instanceof NavigationStart) {
+          this.notificationService.post(Signal_ButterBar_Toggle, true);
+        } else if (event instanceof NavigationEnd || event instanceof NavigationCancel || event instanceof NavigationError) {
+          this.notificationService.post(Signal_ButterBar_Toggle, false);
+        }
+      }
+    );
   }
 
   ngOnInit(): void {

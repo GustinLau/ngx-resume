@@ -5,8 +5,7 @@ import {RouterModule} from '@angular/router';
 import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 import {HttpClientModule} from '@angular/common/http';
 import {ROUTES} from './app.routes';
-import {Notification_Service_Provider} from './core/service/notification.service';
-import {Info_Service_Provider} from './core/service/info.service';
+import {CoreModule, CoreModuleProviders} from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -14,12 +13,12 @@ import {Info_Service_Provider} from './core/service/info.service';
   ],
   imports: [
     BrowserModule,
+    CoreModule,
     HttpClientModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [
-    Notification_Service_Provider,
-    Info_Service_Provider,
+    CoreModuleProviders,
     {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   bootstrap: [AppComponent]
