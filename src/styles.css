@@ -1,0 +1,103 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  background: url(./assets/images/main-bg.jpg) center bottom;
+  background-size: cover;
+  background-color: #E8E8E8;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #111;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 860px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+}
+
+.color-white {
+  color: white;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/*-------------------------------------------------------*/
+/* icon */
+/*-------------------------------------------------------*/
+
+@font-face {
+  font-family: "iconfont";
+  src: url('./assets/font/iconfont.eot?t=1550220569454'); /* IE9 */
+  src: url('./assets/font/iconfont.eot?t=1550220569454#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAUUAAsAAAAACbAAAATIAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDVgqGCIR+ATYCJAMcCxAABCAFhG0HYBtOCBEVpBORfVFgO74YlHVaHCMZjTCyXW93Zs/0Q4K+L4KH//vVfTFZlJ6UVtuWAbTWtGfAVjzDxpYiC2jpQ5TL7bUk/7SmQJUqsQzCoBEOWZ1B2ZcYyQ/vaS/tmBluJyCzeLB/bwGwNVcHLMzZzL0vybNPHv1CsptSOmn69MP9TNe8geVb25wii7rt4wDHAxpYVFyV8B0AHlI/wDNM4IXtEICdBUgD0mhq7QxWHKefAMRYWIgfWEsmvIckKNrUMlXTIDVASpGluAsA5uKPF3+giFAAklDgDG0PNgmE8nvaDxN47BrDM7RA5XoOQJoFCkgBoEHMtrpmQKXRFOCpjUs0VwAnBcU/ad8Lf7a8j/kwcX1NidAsc1yCtovuqliLPRE4+skzA6mciO+PmeGT1udBwacwDwI+TUX9ajM0YEJ1DPKg4WuiCgmAJZziBjzAG4DIgKNJxQ5JYqIi/jBCT0IXUKJ01EKc25kE3L8vVX9AuH9X+/jG5d4ruxu5f/c+AcHVM+gXbnKbO2+p+Jo7fJau26m05HSxNNCG33Co+075Lexm2W0XdOGCHRrRdpUx9NL53iOX1nKuB3fE+6/d7t4ndt9Ru7pw7tjJ6Lirft7asDIi3MDsplKVDbFKflmDf45wX3T+PpK7T0VXvgu42gZKW3aF4Ecl7vUMSgyelp+Llf59zeMxuVsoOrTBAejefUGFlo1xNnVLhYyvl69KBE12MreMoCiu564xGkAMaR4SjiUsdWtlLG9ye3asSBKcGwaE178Y6xFTO//yOJq5WNlHaFYxhHNPjy8NyAZ4s+jeCabuhq5cERQ5jsb6AOTxGGAuFPoULnEHkvqcHdjRq+/oE03vyerimNqlimFOqL5zt6gTxN+UNZkfjP9OsUcmZl6vpE5aPU9MKBOY/lyjeO600nh50ZjHgaWV1ts7+Tpzf4L2XBOFvLnrdhGdEZk9+cnfhZs4qk+nM8dPUKNCT6IWzTv1Nn7RRuz37dVOi+D/h583WsGW0P2VLBMFH0xqROWx7SVRbyjm4RC0u/Ot8Vq+PKN7MiFvaqxEcGL+57LUL2ZrYE9hnX6jZpcz+/nH7EgwMjPWH4MCCrrvs0WXREtWhw/mVhK3ix2eNE3dLbeL5n5+moiJLLUGRgHASLC7uDc8ZNv08FYAqH3cp2vqXXN3fA5g3HByvPL/az9W1n3e+9Bp/ztRkQDAdUUXBwnGo8ddGMCfRI0h/jcZSNx6UP8yU+qYLVpH8AUjNXpuDAtn+KeEJWB3fWCgzw/P19OERodBUEpiCSSZOSgKS7TGH8FEixOYKVzAzgHMZjsYQTwoRFMCJKAQQOjDNChdfmD04RLt+GcQTOEbJPoIHmpuCNOSLdYIiC+Pis4wgv8DDjKSZ7VLUviGaemdFqUx+Qt15gDURVVNvOKIusaI+Ts1ZgSkMsAL7IZ9LzCptBisyGbTvSyp7ZGKIMPqAo+KzjCC/wMOMlJY3y6193/DtPROexAN/i/UmZuHuqhGoF9V4yjEs7Sev1NjRtyLVAZ4QQf2blRgau/UYrAizwhP95Jq0VhVsb9meJ0bWK0u4Kx+RFRMXEKSZCkcA9mNeXHHWzuKuMd95P/Mpz9ZfhvT0y7LgKebnIlJ3bBaAQ==') format('woff2'),
+  url('./assets/font/iconfont.woff?t=1550220569454') format('woff'),
+  url('./assets/font/iconfont.ttf?t=1550220569454') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */ url('./assets/font/iconfont.svg?t=1550220569454#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dianhua:before {
+  content: "\e624";
+}
+
+.icon-resume:before {
+  content: "\e7ac";
+}
+
+.icon-dizhi:before {
+  content: "\e60e";
+}
+
+.icon-youxiang:before {
+  content: "\e66f";
+}
+
+.icon-home:before {
+  content: "\e647";
+}
+
+.icon-contact:before {
+  content: "\e646";
+}
+
+/*-------------------------------------------------------*/
+/* Responsive Fix for under 767px*/
+/*-------------------------------------------------------*/
+@media only screen and  (max-width: 767px) {
+  body {
+    height: auto;
+    min-height: 1000px;
+    overflow-y: scroll;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+}
+

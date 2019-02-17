@@ -1,0 +1,45 @@
+.title {
+  font-size: 21px;
+  color: #111;
+  position: absolute;
+  top: 15px;
+  margin: 0;
+}
+
+.chart-container {
+  padding-top: 15px;
+  /* 小屏幕 */
+  @media only screen and (max-width: 767px) {
+    padding-top: 30px
+  }
+}
+
+.chart {
+  width: 100%;
+  /* 小屏幕 */
+  @media only screen and (min-width: 320px) and (max-width: 374px) {
+    width: 200%;
+    margin-left: -50%;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  @media only screen and (min-width: 375px) and (max-width: 413px) {
+    width: 200%;
+    margin-left: -50%;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  @media only screen and (min-width: 414px) and (max-width: 500px) {
+    width: 200%;
+    margin-left: -50%;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+
+}

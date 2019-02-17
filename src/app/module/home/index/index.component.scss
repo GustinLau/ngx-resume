@@ -1,0 +1,86 @@
+.main {
+  position: relative;
+  height: 100%;
+  /* 小屏幕 */
+  @media only screen and (max-width: 767px) {
+    min-height: 425px;
+  }
+}
+
+.hello-text {
+  font-size: 22.5px;
+  margin: 10px 0;
+  span {
+    background: #f4d03f;
+    padding: 2px 5px;
+    color: #111;
+    margin-left: 5px;
+  }
+}
+
+.position {
+  color: #666;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 14px;
+  color: #666;
+  text-indent: 28px;
+  text-align: justify;
+  padding-right: 75px;
+  /* 小屏幕 */
+  @media only screen and (max-width: 767px) {
+    padding-right: 0;
+  }
+}
+
+.watermark-home {
+  width: 330px;
+  height: 330px;
+  position: absolute;
+  bottom: 0;
+  right: -5px;
+  background: url(../../../../assets/images/profile.png) no-repeat;
+  background-size: contain;
+  background-position: right;
+  /* 小屏幕 */
+  @media only screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.personal-info-container {
+  position: absolute;
+  bottom: 35px;
+  .title {
+    font-size: 21px;
+    margin-top: 65px;
+    margin-bottom: 20px;
+  }
+  .info {
+    margin-bottom: 10px;
+    span {
+      padding: 4px 10px 5px;
+      font-size: 12.5px;
+      line-height: 1.4;
+      display: inline-block;
+      font-weight: 600;
+      a {
+        color: inherit;
+      }
+      &:first-child {
+        margin-right: 10px;
+        width: 75px;
+        min-width: 75px;
+        background: #f4d03f;
+        color: #111;
+      }
+      &:last-child {
+        background: #111;
+        color: #FFF;
+      }
+    }
+  }
+}

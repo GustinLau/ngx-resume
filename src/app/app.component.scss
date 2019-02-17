@@ -1,0 +1,207 @@
+.h-full {
+  height: 100vh;
+}
+
+.content {
+  position: relative;
+  min-width: 620px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin: 0 -15px;
+  /* 小屏幕 */
+  @media only screen and (max-width: 767px) {
+    min-width: inherit;
+    top: 0;
+    margin-top: 15px;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .left {
+    float: left;
+    width: 33.333333%;
+    /* 小屏幕 */
+    @media only screen and  (max-width: 767px) {
+      width: 100%;
+    }
+    .name-card {
+      background: #111;
+      height: 50%;
+      min-height: 300px;
+      margin-bottom: 15px;
+      text-align: center;
+      color: #fff;
+      .avatar {
+        margin-top: 20px;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        float: none;
+        overflow: hidden;
+        background-color: #fff;
+        border: 7px solid #f4d03f;
+        z-index: 100;
+      }
+      h1.main-title {
+        font-size: 45px;
+        margin-top: 0;
+        margin-bottom: 3px;
+      }
+      h3.sub-title {
+        font-size: 24px;
+        font-weight: normal;
+        margin-top: 0;
+      }
+
+    }
+    .menu-container {
+      height: 50%;
+      min-height: 300px;
+      padding: 15px 0;
+      text-align: right;
+      clear: both;
+      background-color: #f4d03f;
+      /* 小屏幕 */
+      @media only screen and  (max-width: 767px) {
+        text-align: center;
+        height: inherit;
+        min-height: inherit;
+        padding: 0;
+        margin-bottom: 15px;
+      }
+      ul.menu {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+        &:after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+        li {
+          position: relative;
+          padding: 12px 15px;
+          width: 100%;
+          border-bottom: 1px solid #e1c03a;
+          font-size: 16px;
+          margin: 0;
+          cursor: pointer;
+          overflow: hidden;
+          /* 小屏幕 */
+          @media only screen and  (max-width: 767px) {
+            width: 33.33333%;
+            float: left;
+            padding: 15px;
+            span {
+              display: none;
+            }
+            i {
+              font-size: 19px;
+            }
+          }
+
+          .hover-background {
+            position: absolute;
+            background-color: #111111;
+            width: 300%;
+            height: 300%;
+            top: 200%;
+            left: -100%;
+            -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+            transition-timing-function: ease-out;
+            transition: top 0.38s, left 0.38s;
+          }
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: #111111;
+            text-decoration: none;
+            transition-timing-function: ease-out;
+            transition: color 0.38s;
+          }
+          span {
+            position: relative;
+            font-weight: bold;
+            padding-right: 25px;
+            border-right: 2px solid #e1c03a;
+            margin-right: 15px;
+          }
+          i {
+            position: relative;
+          }
+
+          &:hover {
+            /* 大屏幕 */
+            @media only screen and  (min-width: 768px) {
+              border-bottom-color: #111111;
+              a {
+                color: #f4d03f;
+                transition-timing-function: ease-out;
+                transition: color 0.38s;
+              }
+              .hover-background {
+                top: 0;
+                left: -15%;
+              }
+              span {
+                border-right: 2px solid #f4d03f;
+              }
+            }
+          }
+          &.selected {
+            background-color: #111111;
+            border-bottom-color: #111111;
+            border-right: none;
+            a {
+              color: #f4d03f;
+            }
+            .hover-background {
+              top: 0;
+              left: -15%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .right {
+    float: left;
+    width: 66.666666%;
+    padding-left: 0;
+    /* 小屏幕 */
+    @media only screen and  (max-width: 767px) {
+      width: 100%;
+      padding-left: 15px;
+    }
+    .title-container {
+      position: relative;
+      height: 130px;
+      margin-bottom: 15px;
+      padding: 15px;
+      padding-left: 25px;
+      background: #111111;
+      color: #FFF;
+      ::ng-deep h2 {
+        font-size: 30px;
+        position: absolute;
+        bottom: 15px;
+        margin: 0;
+        color: #f4d03f;
+      }
+    }
+    .description {
+      position: relative;
+      background-color: #fff;
+      height: 470px;
+      padding: 15px 30px;
+      overflow: hidden;
+      /* 小屏幕 */
+      @media only screen and  (max-width: 767px) {
+        height: auto;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "name": "刘广星",
+  "position": "前端工程师",
+  "location": "广东 · 佛山",
+  "email": "gustinlau@gmail.com",
+  "description": "2015年毕业于广东财经大学（软件工程专业），4年开发经验，参与过多个新项目开发，具备良好的编程习惯与风格，紧跟技术发展潮流，喜欢探究未知领域。熟练前端开发技巧。",
+  "skillOptions": {
+    "radar": {
+      "name": {
+        "textStyle": {
+          "color": "#fff",
+          "backgroundColor": "#999",
+          "borderRadius": 3,
+          "padding": [
+            3,
+            5
+          ]
+        }
+      },
+      "indicator": [
+        {
+          "name": "HTML",
+          "max": 100
+        },
+        {
+          "name": "Angular",
+          "max": 100
+        },
+        {
+          "name": "CSS",
+          "max": 100
+        },
+        {
+          "name": "Rxjs",
+          "max": 100
+        },
+        {
+          "name": "JavaScript",
+          "max": 100
+        },
+        {
+          "name": "NodeJs",
+          "max": 100
+        },
+        {
+          "name": "Algorithm",
+          "max": 100
+        },
+        {
+          "name": "iOS",
+          "max": 100
+        },
+        {
+          "name": "Java",
+          "max": 100
+        },
+        {
+          "name": "Flutter",
+          "max": 100
+        },
+        {
+          "name": "Git",
+          "max": 100
+        }
+      ],
+      "radius": 140
+    },
+    "series": [
+      {
+        "type": "radar",
+        "data": [
+          {
+            "value": [
+              82,
+              72,
+              80,
+              78,
+              85,
+              75,
+              65,
+              84,
+              80,
+              68,
+              80
+            ],
+            "itemStyle": {
+              "color": "#ccc"
+            },
+            "lineStyle": {
+              "color": "#e1c03a"
+            },
+            "areaStyle": {
+              "opacity": 0.68,
+              "color": "#f4d03f"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "educations": [
+    {
+      "school": "广东财经大学",
+      "major": "软件工程",
+      "duration": "2011-2015",
+      "desc": "主修软件工程，计算机组成原理，汇编语言程序设计，C 程序设计，计算机网络原理等课程。"
+    }
+  ],
+  "experiences": [
+    {
+      "company": "个人项目",
+      "projects": [
+        {
+          "name": "NextDay APP",
+          "link": "https://github.com/GustinLau/Flutter-NextDay",
+          "desc": "使用Flutter模仿NextDay的练习项目。"
+        }
+      ]
+    },
+    {
+      "company": "佛山市乐商互联网科技有限公司",
+      "duration": "2016.01-2017.05",
+      "position": "前端工程师",
+      "projects": [
+        {
+          "name": "中塑之都",
+          "link": "http://www.suliao666.com",
+          "desc": "主要负责前端页面,使用JSP+jQuery开发以及数据接入。"
+        },
+        {
+          "name": "货牛APP官网",
+          "link": "http://goodsbull.com",
+          "desc": "根据设计稿制作货牛APP官网，主要使用JSP+jQuery开发，部分界面使用React开发。"
+        }
+      ]
+    },
+    {
+      "company": "广州小梭信息科技有限公司",
+      "duration": "2017.05-2019.02",
+      "position": "前端工程师，iOS工程师",
+      "projects": [
+        {
+          "name": "感觉校园后台",
+          "desc": "主要负责后台前端页面,使用JSP+jQuery开发以及数据接入。"
+        },
+        {
+          "name": "感觉校园APP(iOS)",
+          "link": "https://itunes.apple.com/cn/app/%E6%84%9F%E8%A7%89%E6%A0%A1%E5%9B%AD/id1277445209",
+          "desc": "一个校园社交类型APP，协作开发，主要负责iOS端开发，使用Objective-C语言，多次迭代后交付给客户自行维护。"
+        },
+        {
+          "name":"元培学堂APP(iOS)&H5活动界面",
+          "link":"https://itunes.apple.com/cn/app/%E5%85%83%E5%9F%B9%E5%AD%A6%E5%A0%82/id1343248432",
+          "desc":"一个美学教育类型APP，个人开发，主要负责iOS端开发以及H5活动界面开发，APP使用Objective-C语言，涉及视频播放、苹果内购、视频下载等功能。迭代到1.5.0版本后交付给客户进行维护。"
+        },
+        {
+          "name":"包你进微信吸粉系统",
+          "desc":"全栈个人开发，使用SSM框架开发，涉及微信分享、企业打款等功能。"
+        },
+        {
+          "name":"袜子管家后台系统",
+          "desc":"负责前端后台界面编写以及数据接入，使用Angular6.x实现，涉及权限控制、路由等功能。"
+        },
+        {
+          "name":"甘草超人微信小程序（工厂端&用户端）",
+          "link":"https://s2.ax1x.com/2019/02/16/ksUytO.jpg",
+          "desc":"对原有代码进行重构并进行性能优化，内存占用以及性能有了明显提升。"
+        },
+        {
+          "name":"绽放花园订购网站",
+          "link":"http://teamlabsz.bpark-china.com",
+          "desc":"主要负责界面编写，涉及响应式与国际化。"
+        },
+        {
+          "name":"嗨老会APP(iOS)",
+          "link":"https://itunes.apple.com/cn/app/%E5%97%A8%E8%80%81%E4%BC%9A/id1434057621",
+          "desc":"一个老年人社交类型APP,协作开发，主要负责iOS端开发，使用Objective-C语言。涉及视频播放、苹果内购、消息推送、网页原生交互等功能。"
+        }
+      ]
+    }
+  ]
+}

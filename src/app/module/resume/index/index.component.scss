@@ -1,0 +1,57 @@
+ul.tab-bar {
+  list-style: none;
+  margin: -15px -30px 0 -30px;
+  padding: 0;
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  li {
+    display: block;
+    float: left;
+    width: 33.33333333%;
+    background: #f4d03f;
+    border-right: 2px solid #FFF;
+    &:last-child {
+      border-right: none;
+    }
+    a {
+      display: block;
+      line-height: 65px;
+      background-color: #111111;
+      text-align: center;
+      font-size: 16px;
+      color: #f4d03f;
+      font-weight: 600;
+      transition-timing-function: ease-out;
+      transition: background-color 0.38s, color 0.38s;
+      background-position: left;
+      background-size: contain;
+      background-repeat: no-repeat;
+      &.skill {
+        background-image: url("../../../../assets/images/icon_01.png");
+      }
+      &.edu {
+        background-image: url("../../../../assets/images/icon_02.png");
+      }
+      &.exp {
+        background-image: url("../../../../assets/images/icon_03.png");
+      }
+      &:hover, &.selected {
+        color: #111111;
+        background-color: #f4d03f;
+        transition: background-color 0.38s, color 0.38s;
+      }
+    }
+  }
+}
+
+.sub-container {
+  position: relative;
+  height: 100%;
+  /* 小屏幕 */
+  @media only screen and (max-width: 767px) {
+    min-height: 425px;
+  }
+}

@@ -1,0 +1,67 @@
+.title {
+  font-size: 21px;
+  color: #111;
+  margin: 15px 0 10px 0;
+  line-height: 25px;
+}
+
+.container {
+  margin: 0;
+  padding: 15px 0;
+  max-height: 365px;
+  overflow: auto;
+  /* 小屏幕 */
+  @media only screen and (max-width: 767px) {
+    max-height: inherit;
+  }
+  .exp {
+    background: #111;
+    position: relative;
+    margin-bottom: 15px;
+    padding: 15px;
+    color: #F7EFE2;
+    /* 小屏幕 */
+    @media only screen and (max-width: 767px) {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .main-text {
+      color: #F7EFE2;
+      font-size: 13px;
+      font-weight: 400;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      .duration {
+        color: #F9BF3B;
+        float: right;
+      }
+    }
+    .sub-text {
+      color: #f4d03f;
+      margin-top: 5px;
+      font-weight: bold;
+      line-height: 1.1;
+      font-size: 13px;
+    }
+    .desc-text {
+      margin: 0 0 10px;
+      font-size: 12px;
+      p {
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: inherit;
+        }
+      }
+      a {
+        color: inherit;
+        font-size: 13px;
+        line-height: 1.8;
+        &:link {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+

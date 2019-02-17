@@ -1,0 +1,40 @@
+.title {
+  font-size: 21px;
+  color: #111;
+  margin: 15px 0 0;
+  line-height: 25px;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  max-height: 365px;
+  overflow: auto;
+  /* 小屏幕 */
+  @media only screen and (max-width: 767px) {
+    max-height: inherit;
+  }
+  .edu {
+    .main-text {
+      background-color: #f4d03f;
+      color: #111111;
+      padding: 10px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .sub-text {
+      padding: 0 15px;
+      line-height: 1.1;
+      color: #666;
+      font-size: 13px;
+      font-weight: 700;
+      font-style: italic;
+    }
+    .desc-text {
+      font-size: 14px;
+      color: #666;
+      padding: 0 15px;
+    }
+  }
+}
+

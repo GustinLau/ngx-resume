@@ -1,0 +1,13 @@
+<div class="fadeInUp animated fast">
+  <h4 class="title">教育经历</h4>
+  <div class="container">
+    <div class="edu" *ngFor="let info of educations">
+      <p class="main-text">{{info.school}}</p>
+      <p class="sub-text">{{info.major}}（{{info.duration}}）</p>
+      <p class="desc-text">{{info.desc}}</p>
+    </div>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,24 @@
+<div class="main fadeInUp animated fast">
+  <h3 class="hello-text">Hello,我是<span>{{info.name}}</span></h3>
+  <div class="position">
+    {{info.position}}
+  </div>
+  <p>
+    {{info.description}}
+  </p>
+
+  <div class="watermark-home"></div>
+
+  <div class="personal-info-container">
+    <h4 class="title">个人信息</h4>
+    <div class="info">
+      <span>Name</span><span>{{info.name}}</span>
+    </div>
+    <div class="info">
+      <span>Address</span><span>{{info.location}}</span>
+    </div>
+    <div class="info">
+      <span>Email</span><span><a href="mailto:{{info.email}}">{{info.email}}</a></span>
+    </div>
+  </div>
+</div>
